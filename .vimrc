@@ -13,7 +13,6 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'ctrlpvim/ctrlp.vim'
