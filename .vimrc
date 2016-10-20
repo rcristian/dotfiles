@@ -16,6 +16,9 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'ctrlpvim/ctrlp'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -35,9 +38,14 @@ filetype plugin indent on    " required
 syntax on
 filetype plugin indent on
 
-map 1 :tabnext<CR>
-map 2 :tabprevious<CR>
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
 
-set tabstop=2
+map 1 :tabprev<CR>
+map 2 :tabnext<CR>
+map <c-z> :CtrlP<CR>
+
 
 
