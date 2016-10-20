@@ -16,7 +16,7 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'ctrlpvim/ctrlp'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 
