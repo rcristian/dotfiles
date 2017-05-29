@@ -19,6 +19,7 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'mileszs/ack.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -47,5 +48,5 @@ map 1 :tabprev<CR>
 map 2 :tabnext<CR>
 map <c-z> :CtrlP<CR>
 
-
+let g:ackprg = 'ag --nogroup --nocolor --column'
 
