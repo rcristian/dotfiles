@@ -1,0 +1,3 @@
+--ignore-dir=.venv
+--ignore-dir=venv
+--ignore-dir=node_modules
