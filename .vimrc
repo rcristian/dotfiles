@@ -20,7 +20,8 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mileszs/ack.vim'
-Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive' 
+Plugin 'leafgarland/typescript-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -36,6 +37,12 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/](\.git|\.hg|\.svn|venv|\.venv|node_modules|__pycache__)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
 
 syntax on
 filetype plugin indent on
