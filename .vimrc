@@ -55,6 +55,7 @@ set expandtab
 map 1 :tabprev<CR>
 map 2 :tabnext<CR>
 map <c-z> :CtrlP<CR>
+map <c-s> :Ack 
 
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
