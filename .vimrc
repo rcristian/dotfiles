@@ -57,5 +57,11 @@ map 2 :tabnext<CR>
 map <c-z> :CtrlP<CR>
 map <c-s> :Ack 
 
-let g:ackprg = 'ag --nogroup --nocolor --column'
+" the silver searcher settings
+if executable('rg')
+  let g:ackprg = 'rg --vimgrep'
+  let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+  let g:ctrlp_use_caching = 0
+endif
+
 
