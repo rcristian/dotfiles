@@ -64,4 +64,9 @@ if executable('rg')
   let g:ctrlp_use_caching = 0
 endif
 
+colorscheme slate
+highlight Normal ctermfg=grey ctermbg=black
 
+if has('gui_running')
+    set guifont=Monaco:h16
+endif
