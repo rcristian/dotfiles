@@ -54,16 +54,23 @@ set expandtab
 
 map 1 :tabprev<CR>
 map 2 :tabnext<CR>
-map <c-z> :CtrlP<CR>
-map <c-s> :Ack 
+map <c-z> :tabnew<CR>:CtrlP<CR>
+map <c-s> :tabnew<CR>:Ack
 
 " the silver searcher settings
+"
 if executable('rg')
   let g:ackprg = 'rg --vimgrep'
   let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
   let g:ctrlp_use_caching = 0
 endif
 
+" nerdtree settings
+"
+let NERDTreeShowHidden=1
+
+" make it pretty
+"
 colorscheme slate
 highlight Normal ctermfg=grey ctermbg=black
 
