@@ -21,7 +21,7 @@ Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mileszs/ack.vim'
-Plugin 'tpope/vim-fugitive' 
+Plugin 'tpope/vim-fugitive'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
@@ -58,7 +58,7 @@ set statusline+=%f
 map 1 :tabprev<CR>
 map 2 :tabnext<CR>
 map <c-z> :Files<CR>
-map <c-s> :tabnew<CR>:Ack 
+map <c-s> :tabnew<CR>:Ack
 
 " the silver searcher settings
 "
@@ -79,5 +79,8 @@ if has('gui_running')
     set guifont=Monaco:h16
 endif
 
+if has('python3')
+  silent! python3 1
+endif
 
 
