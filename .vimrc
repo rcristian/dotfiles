@@ -59,7 +59,7 @@ set statusline+=%f
 map 1 :tabprev<CR>
 map 2 :tabnext<CR>
 map <c-z> :Files<CR>
-map <c-s> :tabnew<CR>:Ack
+map <c-f> :tabnew<CR>:Ack
 
 " the silver searcher settings
 "
