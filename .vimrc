@@ -28,6 +28,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'w0rp/ale'
+Plugin 'NLKNguyen/papercolor-theme'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -72,8 +73,8 @@ let NERDTreeShowHidden=1
 
 " make it pretty
 "
-colorscheme slate
-highlight Normal ctermfg=grey ctermbg=black
+set background=light
+colorscheme PaperColor
 
 if has('gui_running')
     set guifont=Monaco:h16
