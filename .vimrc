@@ -48,6 +48,8 @@ filetype plugin indent on    " required
 syntax on
 filetype plugin indent on
 
+set backspace=indent,eol,start
+
 set smartindent
 set tabstop=4
 set shiftwidth=4
