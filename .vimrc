@@ -8,6 +8,18 @@ filetype off                  " required
 set rtp+=~/.vim/bundle/Vundle.vim
 set rtp+=/usr/local/bin/fzf
 
+
+if has('python3')
+    command! -nargs=1 Py py3 <args>
+    set pythonthreedll=/Users/r0by/.pyenv/versions/3.7.1/
+    set pythonthreehome=/Users/r0by/.pyenv/versions/3.7.1/
+else
+    command! -nargs=1 Py py <args>
+    set pythondll=/Users/r0by/.pyenv/versions/2.7.5/lib
+    set pythonhome=/Users/r0by/.pyenv/versions/2.7.5/
+endif
+
+
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
 "call vundle#begin('~/some/path/here')
@@ -28,6 +40,7 @@ Plugin 'junegunn/fzf.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'w0rp/ale'
+Plugin 'arcticicestudio/nord-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -57,7 +70,7 @@ set statusline+=%f
 
 map 1 :tabprev<CR>
 map 2 :tabnext<CR>
-map <c-z> :Files<CR>
+map <c-z> :tabnew<CR>:Files<CR>
 map <c-s> :tabnew<CR>:Ack 
 
 " the silver searcher settings
@@ -72,7 +85,7 @@ let NERDTreeShowHidden=1
 
 " make it pretty
 "
-colorscheme slate
+colorscheme nord
 highlight Normal ctermfg=grey ctermbg=black
 
 if has('gui_running')
