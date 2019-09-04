@@ -74,6 +74,7 @@ map 1 :tabprev<CR>
 map 2 :tabnext<CR>
 map <c-z> :tabnew<CR>:Files<CR>
 map <c-s> :tabnew<CR>:Ack!<Space>
+vnoremap * y/<C-R>"<CR>
 
 " the silver searcher settings
 "
