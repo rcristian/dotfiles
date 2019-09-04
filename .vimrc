@@ -68,6 +68,8 @@ set expandtab
 set laststatus=2
 set statusline+=%f
 
+set ignorecase
+
 map 1 :tabprev<CR>
 map 2 :tabnext<CR>
 map <c-z> :tabnew<CR>:Files<CR>
