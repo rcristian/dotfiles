@@ -91,7 +91,8 @@ let NERDTreeShowHidden=1
 colorscheme nord
 
 if has('gui_running')
-    set guifont=Monaco:h16
+    "set guifont=Monaco:h16
+    set guifont=IBMPlexMono-TextItalic:h18
 endif
 
 
