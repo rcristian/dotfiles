@@ -35,12 +35,11 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'mileszs/ack.vim'
 Plugin 'tpope/vim-fugitive' 
 Plugin 'leafgarland/typescript-vim'
-Plugin 'junegunn/fzf'
-Plugin 'junegunn/fzf.vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'w0rp/ale'
 Plugin 'arcticicestudio/nord-vim'
+Plugin 'Yggdroot/LeaderF'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -72,8 +71,8 @@ set ignorecase
 
 map 1 :tabprev<CR>
 map 2 :tabnext<CR>
-map <c-z> :tabnew<CR>:Files<CR>
-map <c-s> :tabnew<CR>:Ack!<Space>
+map <c-Z> :Leaderf file<CR>
+map <c-z> :Leaderf rg<CR>
 vnoremap * y/<C-R>"<CR>
 
 " the silver searcher settings
