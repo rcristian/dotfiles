@@ -69,10 +69,10 @@ set statusline+=%f
 
 set ignorecase
 
-map 1 :tabprev<CR>
-map 2 :tabnext<CR>
-map <c-Z> :Leaderf file<CR>
-map <c-z> :Leaderf rg<CR>
+nnoremap 1 :tabprev<CR>
+nnoremap 2 :tabnext<CR>
+nnoremap <C-Space> :Leaderf file<CR>
+nnoremap <C-S-Space> :Leaderf rg<CR>
 vnoremap * y/<C-R>"<CR>
 
 " the silver searcher settings
