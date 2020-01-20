@@ -91,7 +91,8 @@ colorscheme nord
 
 if has('gui_running')
     "set guifont=Monaco:h16
-    set guifont=IBMPlexMono-TextItalic:h18
+    "set guifont=IBMPlexMono-TextItalic:h18
+    set guifont=JetBrainsMono-MediumItalic:h16
 endif
 
 
