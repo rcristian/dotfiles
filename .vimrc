@@ -29,12 +29,12 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'tpope/vim-fugitive' 
 Plugin 'leafgarland/typescript-vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'w0rp/ale'
 Plugin 'arcticicestudio/nord-vim'
 Plugin 'Yggdroot/LeaderF'
+Plugin 'zivyangll/git-blame.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -69,6 +69,7 @@ nnoremap 2 :tabnext<CR>
 nnoremap <C-Space> :Leaderf file<CR>
 nnoremap <C-S-Space> :Leaderf rg<CR>
 vnoremap * y/<C-R>"<CR>
+nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
 " the silver searcher settings
 "
