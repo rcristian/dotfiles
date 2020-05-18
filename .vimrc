@@ -32,7 +32,7 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'w0rp/ale'
-Plugin 'arcticicestudio/nord-vim'
+Plugin 'danilo-augusto/vim-afterglow'
 Plugin 'Yggdroot/LeaderF'
 Plugin 'zivyangll/git-blame.vim'
 
@@ -83,7 +83,7 @@ let NERDTreeShowHidden=1
 
 " make it pretty
 "
-colorscheme nord
+colorscheme afterglow
 
 if has('gui_running')
     "set guifont=Monaco:h16
