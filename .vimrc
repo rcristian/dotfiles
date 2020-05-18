@@ -32,9 +32,9 @@ Plugin 'editorconfig/editorconfig-vim'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'w0rp/ale'
-Plugin 'danilo-augusto/vim-afterglow'
 Plugin 'Yggdroot/LeaderF'
 Plugin 'zivyangll/git-blame.vim'
+Plugin 'jaredgorski/spacecamp'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -82,8 +82,7 @@ endif
 let NERDTreeShowHidden=1
 
 " make it pretty
-"
-colorscheme afterglow
+colorscheme spacecamp_lite
 
 if has('gui_running')
     "set guifont=Monaco:h16
