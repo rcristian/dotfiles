@@ -66,8 +66,8 @@ set ignorecase
 
 nnoremap 1 :tabprev<CR>
 nnoremap 2 :tabnext<CR>
-nnoremap <C-Space> :Leaderf file<CR>
-nnoremap <C-S-Space> :Leaderf rg<CR>
+nnoremap <Tab> :Leaderf file<CR>
+nnoremap <Tab><Tab> :Leaderf rg<CR>
 vnoremap * y/<C-R>"<CR>
 nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
 
