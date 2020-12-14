@@ -6,17 +6,14 @@ filetype off                  " required
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
-set rtp+=/usr/local/bin/fzf
-
 
 if has('python3')
-    command! -nargs=1 Py py3 <args>
-    set pythonthreedll=/Users/r0by/.pyenv/versions/3.7.1/
-    set pythonthreehome=/Users/r0by/.pyenv/versions/3.7.1/
+    command! -nargs=1 Py py <args>
+    set pythonthreedll=~/.pyenv/versions/3.8.6
 else
     command! -nargs=1 Py py <args>
-    set pythondll=/Users/r0by/.pyenv/versions/2.7.5/lib
-    set pythonhome=/Users/r0by/.pyenv/versions/2.7.5/
+    set pythondll=~/.pyenv/versions/2.7.18/lib
+    set pythonhome=~/.pyenv/versions/2.7.18/
 endif
 
 
@@ -28,13 +25,17 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'guns/vim-clojure-static'
+Plugin 'tpope/vim-fireplace'
 Plugin 'editorconfig/editorconfig-vim'
+Plugin 'tpope/vim-fugitive'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'w0rp/ale'
+Plugin 'arcticicestudio/nord-vim'
 Plugin 'Yggdroot/LeaderF'
-Plugin 'zivyangll/git-blame.vim'
-Plugin 'jaredgorski/spacecamp'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -63,26 +64,24 @@ set laststatus=2
 set statusline+=%f
 
 set ignorecase
+set hlsearch
+set incsearch
+set number
+set noswapfile
 
 nnoremap 1 :tabprev<CR>
 nnoremap 2 :tabnext<CR>
 nnoremap <Tab> :Leaderf file<CR>
 nnoremap <Tab><Tab> :Leaderf rg<CR>
 vnoremap * y/<C-R>"<CR>
-nnoremap <Leader>s :<C-u>call gitblame#echo()<CR>
-
-" the silver searcher settings
-"
-if executable('rg')
-  let g:ackprg = 'rg --vimgrep'
-endif
 
 " nerdtree settings
 "
 let NERDTreeShowHidden=1
 
 " make it pretty
-colorscheme spacecamp_lite
+"
+colorscheme pablo
 
 if has('gui_running')
     "set guifont=Monaco:h16
@@ -91,4 +90,4 @@ if has('gui_running')
 endif
 
 
-
+set backspace=indent,eol,start
