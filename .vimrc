@@ -29,13 +29,13 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'guns/vim-clojure-static'
 Plugin 'tpope/vim-fireplace'
 Plugin 'editorconfig/editorconfig-vim'
-Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive' 
 Plugin 'leafgarland/typescript-vim'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'w0rp/ale'
 Plugin 'arcticicestudio/nord-vim'
-Plugin 'Yggdroot/LeaderF'
+Plugin 'Yggdroot/LeaderF', {'do': ':LeaderfInstallCExtension'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -91,3 +91,4 @@ endif
 
 
 set backspace=indent,eol,start
+
