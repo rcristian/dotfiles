@@ -9,11 +9,11 @@ set rtp+=~/.vim/bundle/Vundle.vim
 
 if has('python3')
     command! -nargs=1 Py py <args>
-    set pythonthreedll=~/.pyenv/versions/3.8.6
+    set pythonthreedll=/Users/r0by/.pyenv/versions/3.8.6
 else
     command! -nargs=1 Py py <args>
-    set pythondll=~/.pyenv/versions/2.7.18/lib
-    set pythonhome=~/.pyenv/versions/2.7.18/
+    set pythondll=/Users/r0by/.pyenv/versions/2.7.18/lib
+    set pythonhome=/Users/r0by/.pyenv/versions/2.7.18/
 endif
 
 
@@ -92,3 +92,9 @@ endif
 
 set backspace=indent,eol,start
 
+let g:Lf_RgConfig = [
+        \ "--max-columns=150",
+        \ "--glob=!{node_modules,.git,.venv}",
+        \ "--hidden",
+        \ "--word-regexp"
+    \ ]
