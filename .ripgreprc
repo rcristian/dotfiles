@@ -1,0 +1,6 @@
+--max-columns=150
+--max-columns-preview
+
+--max-filesize 200K
+
+--glob=!{node_modules,.git,.venv}
